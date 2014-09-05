@@ -2,7 +2,7 @@
 #define LIST_H
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> //malloc (), free()
 
 typedef enum boolean{
 	FALSE,TRUE
@@ -16,5 +16,7 @@ typedef struct node{
 void initList (Node **pList);//sets the list to empty or NULL
 Boolean isEmpty(Node *pList);
 Node * makeNode (int newData);//allocates memory dynamically, init memory
+void printListIteractive(Node *pList);
+Boolean insertAtFront (Node **pList, int newData);
 
 #endif
